@@ -1,7 +1,7 @@
 ---
 # try also 'default' to start simple
 # theme: eloc
-title: Vulkan Triangle Speedrun (any%)
+title: High Performance Bash
 # apply UnoCSS classes to the current slide
 class: text-center
 transition: none
