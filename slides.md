@@ -317,6 +317,42 @@ split the input into smaller chunks
 ---
 
 <style>
+p, .shiki {
+font-size: 1.4rem !important;
+}
+</style>
+
+# parallelization
+brrrrrrrrrr
+
+```bash
+#!/usr/bin/env bash
+
+step=100000
+for((i=0; i<10; ++i)); do
+  seq $((1+step*i)) $((step*(i+1))) \
+    | paste -sd+ \
+    | bc &
+done \
+  | paste -sd+ \
+  | bc
+```
+
+---
+layout: quote
+---
+
+
+# parallelization
+
+&nbsp;
+
+![img](https://cdn.badcop.live/2026/07/02/52_20.png)
+
+
+---
+
+<style>
 .slidev-layout {
 background: url('https://cdn.badcop.live/2026/07/02/12_39.png');
 background-size: contain;
@@ -350,3 +386,13 @@ margin-top:11.5%;
 ## port it all to C; call from bash
 
 </v-click>
+
+---
+layout: quote
+---
+
+# rip bash
+
+&nbsp;
+
+![img](https://cdn.badcop.live/2026/07/02/57_47.png)

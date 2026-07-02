@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+step=100000
+for((i=0; i<10; ++i)); do
+  seq $((1+step*i)) $((step*(i+1))) \
+    | paste -sd+ \
+    | bc &
+done \
+  | paste -sd+ \
+  | bc
